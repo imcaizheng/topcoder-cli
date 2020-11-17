@@ -15,9 +15,9 @@ const logger = createLogger({
     new transports.Console({
       format: format.combine(format.colorize(), format.simple())
     }),
-    new transports.File({
-      filename: 'topcoder-cli.log'
-    })
+    // new transports.File({
+    //   filename: 'topcoder-cli.log'
+    // })
   ]
 })
 
