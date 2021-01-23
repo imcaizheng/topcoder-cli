@@ -41,7 +41,7 @@ function archiveCodebase (prefix) {
   const filenames = glob.sync(['**/*'], {
     cwd: prefix,
     dot: true,
-    ignore: [constants.rc.name, 'node_modules'],
+    ignore: [constants.rc.name, 'node_modules', '.git'],
     onlyFiles: true
   })
   const zip = new AdmZip()
